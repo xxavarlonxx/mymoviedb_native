@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+    <View
+        android:id="@+id/login_header"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary"/>
+
+    <View
+        android:id="@+id/login_wave"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/login_header"
+        android:background="@drawable/ic_wave"/>
+
+    <EditText
+        android:id="@+id/login_edit_text_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_below="@id/login_wave"
+        android:hint="E-Mail"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="8dp"
+        android:inputType="textEmailAddress"
+        />
+
+    <EditText
+        android:id="@+id/login_edit_text_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_below="@id/login_edit_text_email"
+        android:hint="Password"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawablePadding="8dp"
+        android:inputType="textPassword"
+        />
+
+</RelativeLayout>
